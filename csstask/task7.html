@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* Styling the page background */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8B1E42; /* Deep Maroon Background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Form Container */
+        .form-container {
+            background-color: #5D0E41; /* Darker shade of Maroon */
+            padding: 30px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+        /* Label Styling */
+        .form-container label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Input Fields */
+        .form-container input, 
+        .form-container select, 
+        .form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+        }
+
+        /* Gender Selection */
+        .form-container .gender-options {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .form-container .gender-options input {
+            margin-left: 5px;
+        }
+
+        /* Dropdown Styling */
+        .form-container select {
+            width: 100%;
+            padding: 8px;
+        }
+
+        /* Register Button */
+        .form-container button {
+            width: 100%;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .form-container button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form>
+            <label>Name:</label>
+            <input type="text" placeholder="your name">
+
+            <label>Email:</label>
+            <input type="email" placeholder="your email">
+
+            <label>Password:</label>
+            <input type="password" placeholder="your password">
+
+            <label>Phone Number:</label>
+            <input type="number" placeholder="your phone number">
+
+            <label>Gender:</label>
+            <div class="gender-options">
+                <label>Male: <input type="radio" name="gender"></label>
+                <label>Female: <input type="radio" name="gender"></label>
+                <label>Other: <input type="radio" name="gender"></label>
+            </div>
+
+            <label>Language:</label>
+            <select>
+                <option>Select language</option>
+                <option>English</option>
+                <option>Spanish</option>
+                <option>French</option>
+            </select>
+
+            <label>Zip Code:</label>
+            <input type="text" placeholder="your zip code">
+
+            <label>About:</label>
+            <textarea placeholder="Write about yourself..."></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>

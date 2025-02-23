@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Sidenav Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Sidebar container */
+        .sidenav {
+            height: 100vh;
+            width: 60px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: #f1f1f1;
+            padding-top: 20px;
+        }
+
+        /* Sidebar buttons */
+        .sidenav a {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            transition: 0.3s;
+            width: 60px;
+        }
+
+        /* Button colors */
+        .sidenav a:nth-child(1) { background-color: #2CA35D; }
+        .sidenav a:nth-child(2) { background-color: #007BFF; }
+        .sidenav a:nth-child(3) { background-color: #DC3545; }
+        .sidenav a:nth-child(4) { background-color: #6C757D; }
+
+        /* Hover effect */
+        .sidenav a:hover {
+            width: 150px;
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        /* Main content */
+        .main {
+            margin-left: 80px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            width: 80%;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="#">&#9776;</a>
+        <a href="#">&#9776;</a>
+        <a href="#">&#9776;</a>
+        <a href="#">&#9776;</a>
+    </div>
+
+    <div class="main">
+        <h2>Hoverable Sidenav Buttons</h2>
+        <p>Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+
+</body>
+</html>
